@@ -34,7 +34,7 @@ public class Controller {
     private List<Integer> list = new ArrayList<>();
     
     public Controller(Main view) {
-        this.view = this.view;
+        this.view = view;
         
         this.view.getBtBaca5().addActionListener(new ActionListener() {
             @Override

@@ -7,7 +7,6 @@ package Tugas5;
 
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
-import javax.swing.JScrollPane;
 import javax.swing.JTextPane;
 
 /**
@@ -25,6 +24,22 @@ public class Main extends javax.swing.JFrame {
         initComponents();
         controller = new Controller(this);
     }
+    
+    public JButton getBtBaca5() {
+        return btBaca5;
+    }
+
+    public JButton getBtSimpan5() {
+        return btSimpan5;
+    }
+
+    public JFileChooser getLoadFile5() {
+        return loadFile5;
+    }
+
+    public JTextPane getTxtPane5() {
+        return txtPane5;
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -36,20 +51,20 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        loadFile3 = new javax.swing.JFileChooser();
-        jLabel1 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        loadFile5 = new javax.swing.JFileChooser();
+        jLabel5 = new javax.swing.JLabel();
+        jScrollPane5 = new javax.swing.JScrollPane();
         txtPane5 = new javax.swing.JTextPane();
         btBaca5 = new javax.swing.JButton();
         btSimpan5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Ravie", 1, 24)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("TUGAS 5");
+        jLabel5.setFont(new java.awt.Font("Ravie", 1, 24)); // NOI18N
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("TUGAS 5");
 
-        jScrollPane1.setViewportView(txtPane5);
+        jScrollPane5.setViewportView(txtPane5);
 
         btBaca5.setFont(new java.awt.Font("Tempus Sans ITC", 1, 12)); // NOI18N
         btBaca5.setText("Baca File");
@@ -68,17 +83,17 @@ public class Main extends javax.swing.JFrame {
                         .addComponent(btBaca5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 166, Short.MAX_VALUE)
                         .addComponent(btSimpan5))
-                    .addComponent(jScrollPane1)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jScrollPane5)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(24, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(32, 32, 32)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btBaca5)
@@ -88,7 +103,8 @@ public class Main extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+ 
+    
     /**
      * @param args the command line arguments
      */
@@ -128,29 +144,12 @@ public class Main extends javax.swing.JFrame {
         });
     }
 
-    public JButton getBtBaca5() {
-        return btBaca5;
-    }
-
-    public JButton getBtSimpan5() {
-        return btSimpan5;
-    }
-
-    public JFileChooser getLoadFile5() {
-        return loadFile3;
-    }
-
-    public JTextPane getTxtPane5() {
-        return txtPane5;
-    }
-    
-    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btBaca5;
     private javax.swing.JButton btSimpan5;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JFileChooser loadFile3;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JFileChooser loadFile5;
     private javax.swing.JTextPane txtPane5;
     // End of variables declaration//GEN-END:variables
 }
