@@ -10,5 +10,8 @@ package Tugas5;
  * @author INTAN
  */
 public class Controller {
+    private Main view;
+    private List<Integer> list = new ArrayList<>();
+    
     
 }
